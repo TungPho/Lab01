@@ -46,6 +46,14 @@
 			<span asp-validation-for="DateOfBorth" class="text-danger"></span>
 		</div>
 		<div style="margin-top:7px" class="form-group row">
+			<label asp-for="Points" class="col-sm-2 col-form-label"></label>
+			<div class="col-sm-10">
+				<input asp-for="Points" class="form-control">
+			</div>
+			<span asp-validation-for="Points" class="text-danger"></span>
+		</div>
+
+		<div style="margin-top:7px" class="form-group row">
 			<label asp-for="Gender" class="col-sm-2 col-form-label"></label>
 			<div class="col-sm-10">
 				@foreach (var gender in ViewBag.AllGenders)
@@ -61,8 +69,8 @@
 		<div style="margin-top:7px" class="form-group row">
 			<label asp-for="Address" class="col-sm-2 col-form-label"></label>
 			<div class="col-sm-10">
-<textarea asp-for="Address" class="form-control" placeholder="Địa
-chỉ"></textarea>
+			<textarea asp-for="Address" class="form-control" placeholder="Địa
+			chỉ"></textarea>
 			</div>
 		</div>
 		<div style="margin-top:10px" class="form-group row">
